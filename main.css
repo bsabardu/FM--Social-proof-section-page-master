@@ -1,0 +1,193 @@
+/* Variables */
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+}
+
+/* Layout */
+.flex {
+    display: flex;
+}
+
+.flex50 {
+    flex: 1;
+}
+
+.main {
+max-width: 960px;
+margin: 80px auto;
+}
+
+
+
+
+/* Styling */
+
+h1,h2,h3 {margin:0}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--very-dark-magenta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(/images/bg-pattern-bottom-desktop.svg) no-repeat bottom right;
+    background-color: white;
+    z-index:10;
+}
+
+body * {
+    z-index: 10;
+}
+
+body:before{
+    position: fixed;
+    content: "";
+    background: url(/images/bg-pattern-top-desktop.svg) no-repeat top left;
+    width: 100vw;
+    height: 100vh;
+    z-index:0;
+}
+
+.intro{
+    margin-bottom: 24px;
+}
+
+.title {
+    margin-right: 4vw;
+}
+
+.title h1 {
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+}
+
+.title p {
+    line-height: 1.6;
+}
+
+.review {
+    font-weight: 700;
+    background-color: var(--light-grayish-magenta);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 400px;
+    flex-direction: row;
+}
+
+.review span {
+    margin-left: 24px;
+}
+
+.report-guru {
+    margin-left: 32px;
+}
+
+.best-tech {
+    margin-left: 64px;
+}
+
+
+.testimonial {
+    color: white;
+    /* margin: 0 12px; */
+    padding: 32px 24px;
+    background-color: var(--very-dark-magenta);
+    border-radius: 8px;
+    height: 160px;
+}
+
+.testimonial img {
+    border-radius: 1000px;
+    margin-right: 16px;
+    width: 32px;
+    height: 32px;
+}
+
+.author h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.testimonial span {
+    font-size: 14px;
+    color: var(--soft-pink);
+}
+
+.quote {
+    line-height: 1.8;
+    font-size: 12px;
+}
+
+.colton {
+    margin-right: 24px;
+}
+.irene {
+    margin-top :24px;
+    margin-right: 24px;
+}
+
+.anne {
+    margin-top: 48px;
+}
+
+/* Attribution */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (min-width: 901px){
+
+}
+
+@media (max-width: 900px) {
+
+    .main {
+        margin: 0 24px;
+    }
+
+    .intro {
+        margin-top: 80px;
+        margin-bottom: 24px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .title {
+        margin:0;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        height: inherit;
+        margin:0;
+        margin-bottom: 16px;
+    }
+
+    .review {
+        width: 100%;
+        height: inherit;
+        margin: 0;
+        padding: 16px 0;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
